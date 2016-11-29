@@ -1,0 +1,17 @@
+<h3>Places Visited:</h3>
+  <p>Here's all the places you've visited:</p>
+
+<ul>
+  <% @places.each() do |place| %>
+    <li><%= place.places() %></li>
+  <% end %>
+</ul>
+
+<h3> Enter a place: </h3>
+
+<form action="/form" method="post">
+  <label for = "place_input">Name of Place</label>
+  <input id = "place_input" name = "place_input" type="text">
+
+  <button type = "submit" class = "btn btn-primary">Add</button>
+</form>
