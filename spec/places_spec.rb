@@ -8,4 +8,10 @@ describe(Place) do
       expect(test_string.places()).to(eq('Portland'))
     end
   end
+
+  describe(".all_places") do
+    it("is empty at first") do
+      expect(Place.all_places()).to(eq([]))
+    end
+  end
 end
