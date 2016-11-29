@@ -2,6 +2,9 @@ require 'places'
 require 'rspec'
 
 describe(Place) do
+  before() do
+    Place.clear()
+  end
   describe("#places") do
     it ("will output a string") do
       test_string = Place.new('Portland')
