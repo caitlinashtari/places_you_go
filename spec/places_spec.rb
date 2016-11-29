@@ -14,4 +14,12 @@ describe(Place) do
       expect(Place.all_places()).to(eq([]))
     end
   end
+
+  describe("#save") do
+    it ("appends a string to the array") do
+      all_places = Place.new('Seattle')
+      all_places.save()
+      expect(Place.all_places()).to(eq([all_places]))
+    end
+  end
 end

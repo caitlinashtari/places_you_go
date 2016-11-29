@@ -13,5 +13,9 @@ class Place
     @@all_array
   end
 
+  define_method(:save) do
+    @@all_array.push(self)
+  end
+
 
 end
