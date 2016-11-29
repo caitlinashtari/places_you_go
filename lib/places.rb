@@ -17,5 +17,9 @@ class Place
     @@all_array.push(self)
   end
 
+  define_singleton_method(:clear) do
+    @@all_array = []
+  end
+
 
 end
